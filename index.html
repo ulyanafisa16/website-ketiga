@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Web | Portofolio</title>
+    <title>Web percobaan</title>
 </head>
 <body>
     <!--NAVIGATION BAR-->
     <div class="container">
-        <div class="sidebar">
+        <div clas="sidebar">
             <nav>
                 <ul class="ul-navbar">
                     <li class="li-navbar">
@@ -24,7 +24,10 @@
                     </li>
                     <li class="li-navbar">
                         <a href="#">Contact</a>
-                    </li>   
+                    </li>  
+                    <li class="li-navbar">
+                        <a onclick="darkMode()">Mode</a>
+                    </li> 
                 </ul>
             </nav>
         </div>
@@ -56,6 +59,14 @@
             </ul>
             </footer>
         </div>
-    </div>    
+    </div> 
+    <script>
+        let body = document.body;
+        function darkMode() {
+            console.log('dark mode di klik')
+            body.classList.toggle("dark");
+        }
+    
+      </script>   
 </body>
 </html>
